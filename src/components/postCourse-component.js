@@ -24,7 +24,6 @@ const PostCourseComponent = (props) => {
   const postCourse = () => {
     CourseService.post(title, description, price)
       .then(() => {
-        window.alert("新課程已創建成功");
         navigate("/course");
       })
       .catch((error) => {
