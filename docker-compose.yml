@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  client:
+    image: registry.gitlab.com/allen7270/cicd-mern-client:2.0
+    ports:
+      - 80:80
+    restart: always
